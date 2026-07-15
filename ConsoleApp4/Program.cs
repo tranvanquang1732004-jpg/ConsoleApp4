@@ -4,9 +4,7 @@ using System.Linq;
 
 namespace QuanLyNhanVatGame
 {
-    // ============================
-    // CLASS NHÂN VẬT
-    // ============================
+
     class NhanVat
     {
         public string MaNhanVat { get; set; }
@@ -66,9 +64,7 @@ namespace QuanLyNhanVatGame
             } while (luaChon != 0);
         }
 
-        // ============================
-        // MENU
-        // ============================
+
         static void HienThiMenu()
         {
             Console.Clear();
@@ -113,9 +109,7 @@ namespace QuanLyNhanVatGame
             }
         }
 
-        // ============================
-// 2. HIỂN THỊ DANH SÁCH (ĐẢO NGƯỢC)
-// ============================
+
         static void HienThiDanhSach()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -130,9 +124,7 @@ namespace QuanLyNhanVatGame
             }
         }
 
-        // ============================
-        // 3. TÌM THEO MÃ
-        // ============================
+
         static void TimTheoMa()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -151,9 +143,7 @@ namespace QuanLyNhanVatGame
             }
         }
 
-        // ============================
-        // 4. TÌM SỨC TẤN CÔNG LỚN NHẤT
-        // ============================
+
         static void TimSucTanCongLonNhat()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -165,9 +155,7 @@ namespace QuanLyNhanVatGame
             manhNhat.HienThi();
         }
 
-        // ============================
-        // 5. SẮP XẾP GIẢM DẦN THEO CẤP ĐỘ
-        // ============================
+ 
         static void SapXepGiamDanTheoCapDo()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -177,9 +165,7 @@ namespace QuanLyNhanVatGame
             HienThiDanhSach();
         }
 
-        // ============================
-        // 6. XÓA THEO MÃ
-        // ============================
+
         static void XoaTheoMa()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -197,9 +183,7 @@ namespace QuanLyNhanVatGame
             Console.WriteLine("Đã xóa nhân vật thành công!");
         }
 
-        // ============================
-        // 7. THỐNG KÊ THEO LOẠI
-        // ============================
+   
         static void ThongKeTheoLoai()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -215,9 +199,7 @@ namespace QuanLyNhanVatGame
             }
         }
 
-        // ============================
-        // 8. NHÂN VẬT CÓ SỨC MẠNH > GIÁ TRỊ NHẬP
-        // ============================
+
         static void HienThiNhanVatManhHonGiaTri()
         {
             if (!KiemTraDanhSachRong()) return;
@@ -239,9 +221,7 @@ namespace QuanLyNhanVatGame
             }
         }
 
-        // ============================
-        // HÀM TIỆN ÍCH (VALIDATION)
-        // ============================
+
         static bool KiemTraDanhSachRong()
         {
             if (danhSachNhanVat.Count == 0)
